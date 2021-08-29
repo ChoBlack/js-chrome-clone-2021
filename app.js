@@ -4,7 +4,7 @@ const button = loginform.querySelector("button");
 
 
 function onLoginSubmit(event){
-    // event.preventDefault();
+    event.preventDefault();
     const username = input.value;
     console.log(username);
 }
