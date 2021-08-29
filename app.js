@@ -3,8 +3,10 @@ const input = loginform.querySelector("input");
 const button = loginform.querySelector("button");
 
 
-function buttonClick(){
-    console.log(input.value);
+function onLoginSubmit(event){
+    // event.preventDefault();
+    const username = input.value;
+    console.log(username);
 }
 
-button.addEventListener("click", buttonClick);
+loginform.addEventListener("submit", onLoginSubmit);
